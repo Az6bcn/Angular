@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './course.component.html',
   styleUrls: ['./course.component.css']
 })
+
+
 export class CourseComponent implements OnInit {
-courses;
+courses: any;
 
 // Inject the service into the constructor as a Dependency (Depency Injection)
 /******and REGISTER ALL DEPENDECIES IN PROVIDERS [ ]  OF OUR MODULE , app.module.ts**** */

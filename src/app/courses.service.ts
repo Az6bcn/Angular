@@ -6,7 +6,7 @@ export class CoursesService {
 // Get Courses
 getCourses() {
 
-    return ['course1', 'course2', 'course3'];
+       return ['course1', 'course2', 'course3'];
 }
 
   constructor() { }

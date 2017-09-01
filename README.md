@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # HelloWorld
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.2.
@@ -26,3 +27,11 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+=======
+# Angular
+Mosh Angular4 Master class
+
+Hello-Word : 
+How to create a new Component , register it in Module.ts and use the Component via its selector as an Element in HTML so that we can render the Components Template. 
+Example of Interpolation {{}} for field (attribute) and method.
+>>>>>>> 50e71d80b0e7cf03c6ec6a0c5f16156908d13eab

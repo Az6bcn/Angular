@@ -1,4 +1,29 @@
-# AngularFundamental
+# AngularFundamental :
+
+In this branch tutorial of Interpolation{{}}, Angular Directive (*ngFor) to iterate , Services and how to inject it to make it a dependecy for a component.
+
+## INTERPOLATION{{}}:
+-To bind view to a field (attribute) in our component class.
+-To call a method to get some value and show in the browser
+
+{{ field/attribute }} , {{ call a method to get some value }} ==> {{ title }}, {{ getTitle() }}
+
+
+## DIRECTIVE: 
+-To manipulate the DOM
+## Angular Directives => *ngFor , *ngIf etc
+
+
+## SERVICE:
+-To retrieve data form Server, Web Services, Web API etc through HTTP
+-The Service class must consists the Logic for getting the Data through HTTP
+
+*To use the Service created in our Component we need to inject it into it's constructor as a dependecy  (Dependency Injection) and also Resgister it (our Services => depenciies) as provides[ ] in our module (app.modules.ts) so that it will be availaible to all the declared Components in our module (app.module.ts --> declarations [])
+
+
+## DEPENDENCY INJECTION:=> IS INJECTING OR PROVIDDING THE DEPENDENCIES OF A CLASS INTO IT'S CONSTRUCTOR.
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.2.
 

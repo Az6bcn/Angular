@@ -11,8 +11,9 @@ import { Component, OnInit } from '@angular/core';
 export class CourseComponent implements OnInit {
 courses: any;
 
-// Inject the service into the constructor as a Dependency (Depency Injection)
-/******and REGISTER ALL DEPENDECIES IN PROVIDERS [ ]  OF OUR MODULE , app.module.ts**** */
+
+/* Inject the authorService as a Dependency and Register it in provider [ ] in module so it becomes 
+available to all the components --> app.module.ts */
   constructor( _service: CoursesService) {
 
 

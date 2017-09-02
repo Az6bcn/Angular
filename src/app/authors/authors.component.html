@@ -1,0 +1,16 @@
+<p>
+  {{ title }}
+</p>
+
+<!-- get number of authors return from the methos -->
+<h3>{{ getNumberAuthors() + ' '+ 'Authors' }}</h3>
+
+<!-- iterate with *ngFor and show th authors in the authors  -->
+<ul *ngFor = 'let author of authors'>
+
+      <li>
+              {{author}}
+
+      </li>
+
+</ul>

@@ -1,6 +1,8 @@
 import { AppPage } from './app.po';
 
+
 describe('angular-fundamental App', () => {
+
   let page: AppPage;
 
   beforeEach(() => {

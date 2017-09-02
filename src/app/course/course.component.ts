@@ -1,3 +1,4 @@
+
 import { CoursesService } from './../courses.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './course.component.html',
   styleUrls: ['./course.component.css']
 })
+
 
 
 export class CourseComponent implements OnInit {
@@ -19,6 +21,7 @@ available to all the components --> app.module.ts */
 
     this.courses = _service.getCourses();
   }
+
 
   ngOnInit() {
   }

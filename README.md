@@ -1,7 +1,7 @@
 
 # AngularDataBinding
 
-Data Binding
+# Data Binding
 
 
                       #DOM                                                                  COMPONENT
@@ -13,7 +13,7 @@ Event Binding ( )        -------(event e.g Click) = "value/attribute in componen
 
 2Way Binding [( )]       <------[( ngModel )] = "attribute in component"------------------------>
 
-#DOM
+# DOM
 
 DOM is a model of Object that represents the struture of a document. It is a tree in memory.
 
@@ -22,15 +22,15 @@ HTML is a llllllanguage that is uses to represent DOM Objects and properties in 
 
 *Most attributes (properties) of HTML Elements have a one to one mapping to DOM Objects.
 
-#Property Binding binds to the property of a DOM Object.
-#Event Binding is use to handle event raised from the DOM e.g Clicks, Mouse Movementsetc
-#2Way Binding : 
-#-import ngModel into imports: [] in our module.ts file from FormsModule. 
-#import { FormsModule }from '@angular/forms';
-#import:[,FormsModule]
+# Property Binding binds to the property of a DOM Object.
+# Event Binding is use to handle event raised from the DOM e.g Clicks, Mouse Movementsetc
+# 2Way Binding : 
+# -import ngModel into imports: [] in our module.ts file from FormsModule. 
+# import { FormsModule }from '@angular/forms';
+# import:[,FormsModule]
 
 
-#Class and Style Binding
+# Class and Style Binding
 
 Classs binding is use to add additional Bootstrap classes to an element on some conditions
 
@@ -38,7 +38,7 @@ Style binding is use to bind to a property of the sytle DOM Object.
 
 
 
-#PIPES
+# IPES
 
 Pipes is use to format data.
 

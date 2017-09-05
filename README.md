@@ -1,30 +1,51 @@
 
-# AngularFundamental
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.2.
+# AngularDataBinding
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Data Binding
 
 
+                      #DOM                                                                  COMPONENT
+Interpolation{{}}        <------------{{attribute in component class}}---------------------------
+
+Property Binding [ ]     <------[property e.g img [src]] = "value/attribute in component"-------
+
+Event Binding ( )        -------(event e.g Click) = "value/attribute in component"-------------->
+
+2Way Binding [( )]       <------[( ngModel )] = "attribute in component"------------------------>
+
+#DOM
+
+DOM is a model of Object that represents the struture of a document. It is a tree in memory.
+
+HTML is a llllllanguage that is uses to represent DOM Objects and properties in text.
+
+
+*Most attributes (properties) of HTML Elements have a one to one mapping to DOM Objects.
+
+#Property Binding binds to the property of a DOM Object.
+#Event Binding is use to handle event raised from the DOM e.g Clicks, Mouse Movementsetc
+#2Way Binding : 
+#-import ngModel into imports: [] in our module.ts file from FormsModule. 
+#import { FormsModule }from '@angular/forms';
+#import:[,FormsModule]
+
+
+#Class and Style Binding
+
+Classs binding is use to add additional Bootstrap classes to an element on some conditions
+
+Style binding is use to bind to a property of the sytle DOM Object.
+
+
+
+#PIPES
+
+Pipes is use to format data.
+
+Built in PIPES:
+
+*Uppercase  *Lowercase  *Date  *Decimal(number) *Currency  *Percent
+
+# Custom pipes should be Registered in declarations[ ] in our module.ts
+
+***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************

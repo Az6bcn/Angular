@@ -19,7 +19,7 @@ available to all the components --> app.module.ts */
   constructor( _service: CoursesService) {
 
 
-    this.courses = _service.getCourses();
+     this.courses = _service.getCourses();
   }
 
 

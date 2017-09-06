@@ -1,5 +1,26 @@
-<<<<<<< HEAD
+
 # HelloWorld
+
+Hello-Word : 
+How to create a new Component , register it in Module.ts and use the Component via its selector as an Element in HTML so that we can render the Components Template. 
+Example of Interpolation {{}} for field (attribute) and method.
+
+
+# Angular Project Structure
+
+•	e2e: end2end test for our Application. Write test.
+•	node_modules: stores all the third-party libraries that our App depends upon. *Only for development when we compile our Application for production part of the third-party libraries are put in a Bundle and deployed with our Application.
+•	Src: source folder, contains the source code for our application.
+o	app:
+o	assert: for static files, images icons etc
+o	environments: to set/store configuration settings for different environments
+o	index.html: HTML file that contains our Angular Application
+o	main.ts: starting point of our App. (Boostraps the Main Module of our Application (AppModule)
+o	styles.css: for adding global styles to our Application
+o	package.json: is a standard file for every node project. 
+	Dependency : Determines the libraries the Application depends upon.
+o	Tsconfig.json: contains settings for TypeScript compiler , to compile to JavaScript.
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.2.
 
@@ -15,23 +36,11 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 =======
 # Angular
 Mosh Angular4 Master class
 
-Hello-Word : 
-How to create a new Component , register it in Module.ts and use the Component via its selector as an Element in HTML so that we can render the Components Template. 
-Example of Interpolation {{}} for field (attribute) and method.
->>>>>>> 50e71d80b0e7cf03c6ec6a0c5f16156908d13eab

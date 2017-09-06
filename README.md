@@ -8,18 +8,18 @@ Example of Interpolation {{}} for field (attribute) and method.
 
 # Angular Project Structure
 
-•	e2e: end2end test for our Application. Write test.
-•	node_modules: stores all the third-party libraries that our App depends upon. *Only for development when we compile our Application for production part of the third-party libraries are put in a Bundle and deployed with our Application.
-•	Src: source folder, contains the source code for our application.
-o	app:
-o	assert: for static files, images icons etc
-o	environments: to set/store configuration settings for different environments
-o	index.html: HTML file that contains our Angular Application
-o	main.ts: starting point of our App. (Boostraps the Main Module of our Application (AppModule)
-o	styles.css: for adding global styles to our Application
-o	package.json: is a standard file for every node project. 
-	Dependency : Determines the libraries the Application depends upon.
-o	Tsconfig.json: contains settings for TypeScript compiler , to compile to JavaScript.
+	- e2e: end2end test for our Application. Write test.
+	- node_modules: stores all the third-party libraries that our App depends upon. *Only for development when we compile our Application for production part of the third-party libraries are put in a Bundle and deployed with our Application.
+	- Src: source folder, contains the source code for our application.
+	app:
+	- assert: for static files, images icons etc
+	- environments: to set/store configuration settings for different environments
+	- index.html: HTML file that contains our Angular Application
+	- main.ts: starting point of our App. (Boostraps the Main Module of our Application (AppModule)
+	- styles.css: for adding global styles to our Application
+	- package.json: is a standard file for every node project. 
+	- Dependency : Determines the libraries the Application depends upon.
+	- Tsconfig.json: contains settings for TypeScript compiler , to compile to JavaScript.
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.2.

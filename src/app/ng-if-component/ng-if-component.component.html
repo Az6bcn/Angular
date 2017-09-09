@@ -1,0 +1,14 @@
+<p>
+  ng-if-component works!
+</p>
+
+<!-- use *ngIf to show if there're courses or not -->
+<!-- *ngIf Angular 4 approach with 'else'statement.
+
+we render a template for the else statement (this template is refrenced by it's variable #noCourses  -->
+<div *ngIf="courses.length > 0; else noCourses ">
+        There're courses in the List.
+   </div>
+<ng-template #noCourses>
+      There're NO courses in the list.
+</ng-template>

@@ -1,0 +1,12 @@
+<p>
+  ng-class-component works!
+</p>
+
+<!-- To Render a css class among object of css classes based on some condition -->
+<span class="glyphicon"  
+  [ngClass]="{
+    'glyphicon-star': isSelected,
+    'glyphicon-star-empty': !isSelected
+  }"
+(click)='onClick()'>
+</span>

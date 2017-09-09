@@ -1,0 +1,12 @@
+<p>
+  ng-style-component works!
+</p>
+<!-- To Render a style class among object of css classes based on some condition -->
+
+<button type="button"
+[ngStyle]="{
+  'backgroundColor': canSave ? 'blue' : 'gray',
+  'backgroundColor': canSave ? 'yellow' : 'black',
+  'fontWeight': canSave ? 'bold' : 'normal'
+}"
+> Save </button>

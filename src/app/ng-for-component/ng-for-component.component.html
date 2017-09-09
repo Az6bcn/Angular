@@ -1,0 +1,18 @@
+<p>
+  ng-for-component works!
+</p>
+
+<ul *ngFor= 'let c of courses'>
+  <li> {{ c.Name }} </li>
+</ul>
+
+<!-- exported values on ngFor : angular.io , search ngForOf , list of exported values in under the local variables-->
+<ul *ngFor="let c of courses; index as i">
+  <li>{{i}} -{{ c.Name }}</li>
+  <!-- Button to Remove each course-->
+  <button (click)='onRemove(course)' >Remove</button>
+</ul>
+
+<!-- AddButtons -->
+
+<button (click)='onAdd()' >Add</button>

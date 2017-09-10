@@ -1,28 +1,46 @@
-# Directives
+# Directives --> To modify the Dom
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.2.
+# *ngFor    *ngIf     *ngClass    *ngStyle    *Custom Directive     *ngSwitchCase
 
-## Development server
+# ngIf:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+To Hide/Show part of a page (DOM Element == HTML Element)ngFor depending on some condition.
+Angular 4 has the if & else approach.  (The DOM Object is removed from the DOM)
 
-## Code scaffolding
+# Hidden attribute:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+[Hidden] to hide part of a page as well. (The DOM Object is present in the DOM but not rendered)
 
-## Build
+# ngFor:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+To render a list of Objects/ an Array/ a List.
+ngFor has exported values like index, Even etc (www.angular.io , search ngForOf , they re under the Local Variables)
 
-## Running unit tests
+# ngClass:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To render a css class among the Objects of CSS Classes based on some condition. 
+use intead of Class binding.
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
 
-## Further help
+# ngStyle:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To render a css style among the Objects of CSS Styles based on some condition. 
+use intead of Style binding.
+
+# Custom Directive: To modify DOM Object of the HOST this directive is applied on.
+
+# ElementRef:
+Angular injects an instance of ElementRef in the constructor of our Directive, to get direct access to the DOM Element upon which it's applied (Host Element).
+We can accessit's property via # nativeElement property.
+ constructor (private el: ElementRef){
+ }
+
+# HostListener: 
+To subscribe to the Event raised from the DOM element this Directive is applied on.
+@HostListener('NameOfDOMEvent') onFocus(){}
+HostListener() takes an 'DOMEventName' as an argument. When that event gets fired on the HOST element its calls the associated method.
+
+
+
+

@@ -1,0 +1,50 @@
+<!-- Associate this Form to the created FormGroup Object created in .ts using the [formGroup] Directive -->
+<form [formGroup]="form"    (ngSubmit) = "login()"> 
+       <!-- Show validation Error Message for Errors set at Form Level for login() fail -->
+    <div *ngIf="form.errors" class="alert alert-danger">
+                The username or password is invalid.
+    </div>
+
+    <div class="form-group">
+        <label for="username">Username</label>
+<!-- We have 2 formControls , 1 for username input field and the other for password input field-->
+<!-- Associate this input field to the name of the key (username) in our formGroup Object using the formControlName Directive-->
+
+ <input formControlName="username"
+            id="username" 
+            type="text" 
+            class="form-control">
+             <!-- Show Loader Image while Async Validation completes e.g wait for server to validate user name is unique.
+    form controls property 'pending'  returns true if at least one Async validator is in progress -->
+    <div *ngIf="username.pending"> Checking for uniqueness....</div>
+
+    <!-- Add Validation error -->
+    <!-- Show Validation error only IF the filed is touched and invalid
+    -->
+    <div *ngIf="username.touched && username.invalid" class="alert alert-danger">
+    <!-- Specific Validation Errors Messages based on the ERRORS we get from the validator we have set on our key 'username'
+     by ccessing the getter 'username' that returns the key (username) of our 'form' control Object through it's get() in our .ts
+    -->
+    <!-- Check for Error on each Validator with *ngIf -->
+            <div *ngIf="username.errors.required"> Username is required</div>
+            <div *ngIf="username.errors.minlength"> Username should be minimum {{ username.errors.minlength.requiredLength }} characters</div>
+            <!-- Custom Validator Error Message -->
+            <div *ngIf="username.errors.cannotContainSpace"> Username can't contain space</div>
+   
+            <!-- Check for Error on our Custom Async Validator Error  -->
+            <div *ngIf="username.errors.shouldBeUnique"> Username already taken</div>
+    </div>
+</div>
+    <div class="form-group">
+        <label for="password">Password</label>
+<!-- Associate this input field to the name of the key (password) in our formGroup Object using the formControlName -->        
+        <input formControlName="password"
+            id="password" 
+            type="text" 
+            class="form-control">
+    </div>
+    <button class="btn btn-primary" type="submit">Sign Up</button>
+
+    <!-- show formgROUP controls as Json oBJECT-->
+    {{ form.value | json }}
+</form>

@@ -1,0 +1,25 @@
+<h1>
+    My Followers
+</h1>
+
+<div *ngFor='let f of res' class="media">
+    <div class="media-left">
+
+        <img class="avatar media-object" src={{f.avatar_url}} alt="...">
+
+    </div>
+    <div class="media-body">
+        <h4 class="media-heading">
+        <a [routerLink]="['/followers',f.login]">{{f.login}}</a></h4>
+<!-- Route with Multiple Parameters <a [routerLink]="['/followers',f.login, f.url]">{{f.login}}</a></h4> -->
+        <a href="#"> {{f.url}}</a>
+    </div>
+</div>
+
+
+ <!-- Router Parameters -->
+
+  <!-- We use '[routerLink]' as a property binding [routerLink] = "['path', route_parameters]" -->
+
+
+

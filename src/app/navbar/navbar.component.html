@@ -1,0 +1,28 @@
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" >Working with Routes Angular</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li routerLinkActive="active current">
+          <a routerLink="/followers"
+          [queryParams]="{ page: 1, order: 'newest'}">Followers</a>
+        </li>
+        <li routerLinkActive="active current">
+          <a routerLink="/posts">Posts</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Angular DOESN'T USE 'HREF', instead 'ROUTERLINK'-->
+
+  <!-- routerLinkActive: Applies a CSS class to the Active link(route) e.g routerLinkActive = " active "   -->
+
+
+
+
+
+  <!-- Query Parameters : To include 'Optional Parameters' in our routes -->
+
+  <!-- We use '[queryParams]' as a property binding [queryParams] = "{ page: 1, order: 'newest'}" -->

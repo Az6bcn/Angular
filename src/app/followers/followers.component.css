@@ -1,0 +1,7 @@
+.avatar{
+
+    width: 60px;
+    height: 60px;
+    /* To render it has a circle*/
+    border-radius: 100%
+}

@@ -61,4 +61,15 @@ type ValidationErrors = {
         }, 2000);
         });
     }
+  
+  
+  // Validator with parameters:
+    static myValidator(parameter: number): ValidatorFn {
+        return (control: AbstractControl): ValidationErrors | null => {
+            return (control.value) > parameter ? { myValidator: true } : null;
+        }
+    }
+  //Apply in html :
+   <div *ngIf="myFormGroup.controls.myxxx.hasError('cannotBeMoreThanAmountHeld')">Cannot be more than ... </div>
+  
 }

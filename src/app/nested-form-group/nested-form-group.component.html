@@ -5,7 +5,7 @@
     <div class="form-group">
       <label for="username">Username</label>
       <!-- We have 2 formControls , 1 for username input field and the other for password input field-->
-      <!-- Associate this input field to the name of the key (username) in our formGroup Object using the formControlName Directive-->
+      <!-- Associate this input field to the name of the control (username) in our formGroup Object using the formControlName Directive-->
 
       <input formControlName="username" id="username" type="text" class="form-control">
       <!-- Show Loader Image while Async Validation completes e.g wait for server to validate user name is unique.
@@ -16,8 +16,8 @@
       <!-- Show Validation error only IF the filed is touched and invalid
  -->
       <div *ngIf="username.touched && username.invalid" class="alert alert-danger">
-        <!-- Specific Validation Errors Messages based on the ERRORS we get from the validator we have set on our key 'username'
-  by ccessing the getter 'username' that returns the key (username) of our 'form' control Object through it's get() in our .ts
+        <!-- Specific Validation Errors Messages based on the ERRORS we get from the validator we have set on our control 'username'
+  by ccessing the getter 'username' that returns the control (username) of our 'form' control Object through it's get() in our .ts
  -->
         <!-- Check for Error on each Validator with *ngIf -->
         <div *ngIf="username.errors.required"> Username is required</div>
@@ -31,7 +31,7 @@
     </div>
     <div class="form-group">
       <label for="password">Password</label>
-      <!-- Associate this input field to the name of the key (password) in our formGroup Object using the formControlName -->
+      <!-- Associate this input field to the name of the control (password) in our formGroup Object using the formControlName -->
       <input formControlName="password" id="password" type="text" class="form-control">
     </div>
   </div>

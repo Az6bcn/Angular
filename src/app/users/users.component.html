@@ -1,0 +1,38 @@
+
+
+<div *ngIf="(isLoading$ | async)">
+     {{ (isLoading$ | async)}}
+      <i class="fa fa-spinner fa-5x"  aria-hidden="true"></i>
+  </div>
+
+<div class="container" *ngIf="!(isLoading$ | async)">
+    <a routerLink='/users/new' class="btn btn-link">Create User</a>
+  <h1>Users</h1>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>index</th>
+        <th>Users</th>
+        <th>E-mail</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let u of userList; index as i ">
+      <tr>
+        <td>{{i}}</td>
+        <td>{{u.name}}</td>
+        <td>{{u.email}}</td>
+        <td>
+          <a [routerLink] = "['/users/edit', i]">
+            <i a class="fa fa-pencil-square-o" aria-hidden="true">
+            </i>
+          </a>
+        </td>
+        <td> <i class="fa fa-trash-o" aria-hidden="true"></i> </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+

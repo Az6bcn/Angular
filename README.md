@@ -3,9 +3,8 @@
 # Header for get ---> 'Content-Type'
 # Header for post --->  'Content-Type', 'application/json' 
 
-`import { Http, RequestOptions, Headers } from '@angular/http';
-
-const headers = new Headers();
+import { Http, RequestOptions, Headers } from '@angular/http';
+`const headers = new Headers();
 headers.append( 'Content-Type', 'application/json' );
     headers.append('Access-Control-Allow-Headers', 'Content-Type');
     headers.append('Access-Control-Allow-Methods', 'GET');

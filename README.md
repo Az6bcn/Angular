@@ -2,7 +2,8 @@
 
 # Header for get ---> 'Content-Type'
 # Header for post --->  'Content-Type', 'application/json' 
-import { Http, RequestOptions, Headers } from '@angular/http';
+
+`import { Http, RequestOptions, Headers } from '@angular/http';
 
 const headers = new Headers();
 headers.append( 'Content-Type', 'application/json' );
@@ -12,4 +13,4 @@ headers.append( 'Content-Type', 'application/json' );
 
     let options = new RequestOptions( {headers: headers});
 
-    this._http.get(this.url, options)
+    this._http.get(this.url, options) `

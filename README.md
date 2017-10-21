@@ -4,10 +4,11 @@
 # Header for post --->  'Content-Type', 'application/json' 
 
 import { Http, RequestOptions, Headers } from '@angular/http';
-`
-const headers = new Headers();
 
-headers.append( 'Content-Type', 'application/json' );
+`
+    const headers = new Headers();
+
+    headers.append( 'Content-Type', 'application/json' );
 
     headers.append('Access-Control-Allow-Headers', 'Content-Type');
     

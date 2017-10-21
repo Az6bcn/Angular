@@ -1,0 +1,35 @@
+<div class="container">
+  <form [formGroup]="loginFormGroupObject">
+    <h1>Login</h1>
+    <div class="form-group">
+      <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10"></div>
+      <input formControlName="username" type="text" class="form-control" id="inputEmail" placeholder="Email">
+
+      <!-- Show error if the field is touched and not valid-->
+      <div *ngIf="userName.touched && userName.invalid" class="alert alert-danger">
+        <div *ngIf="userName.errors.required"> Email is required</div>
+      </div>
+    </div>
+
+
+    <div class="form-group">
+      <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+      <div class="col-lg-10">
+        <input formControlName="password" type="password" class="form-control" id="inputPassword" placeholder="Password">
+      </div>
+
+      <div *ngIf="loginFormGroupObject.controls['password'].touched && loginFormGroupObject.controls['password'].invalid" class="alert alert-danger">
+        <div *ngIf="loginFormGroupObject.controls['password'].errors.required"> Password is required</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+        <button type="reset" class="btn btn-default" >Cancel</button>
+        <button type="submit" class="btn btn-primary" [disabled]=disabledSubmit()
+        (click) = Login()>Submit</button>
+      </div>
+    </div>
+  </form>
+</div>

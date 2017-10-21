@@ -9,7 +9,5 @@ headers.append( 'Content-Type', 'application/json' );
     headers.append('Access-Control-Allow-Headers', 'Content-Type');
     headers.append('Access-Control-Allow-Methods', 'GET');
     headers.append('Access-Control-Allow-Origin', '*');
-
     let options = new RequestOptions( {headers: headers});
-
     this._http.get(this.url, options) `
